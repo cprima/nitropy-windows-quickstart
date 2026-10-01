@@ -1,0 +1,24 @@
+<Configuration>
+  <!-- Disposable clean-Windows test of the quick start. Double-click to launch.
+       Sandbox configs cannot use relative paths: change both HostFolder paths below to
+       your clone's location (and its sandbox\out folder, which must exist). -->
+  <!-- Results are written to sandbox\out\summary.txt, transcript.txt and DONE (PASS/FAIL). -->
+  <vGPU>Disable</vGPU>
+  <Networking>Enable</Networking>
+  <MemoryInMB>4096</MemoryInMB>
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>D:\github.com\cprima\nitropy-windows-quickstart</HostFolder>
+      <SandboxFolder>C:\Users\WDAGUtilityAccount\Desktop\src</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+    <MappedFolder>
+      <HostFolder>D:\github.com\cprima\nitropy-windows-quickstart\sandbox\out</HostFolder>
+      <SandboxFolder>C:\out</SandboxFolder>
+      <ReadOnly>false</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+  <LogonCommand>
+    <Command>powershell.exe -ExecutionPolicy Bypass -NoExit -File C:\Users\WDAGUtilityAccount\Desktop\src\sandbox\test.ps1</Command>
+  </LogonCommand>
+</Configuration>

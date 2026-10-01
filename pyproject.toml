@@ -1,0 +1,10 @@
+[project]
+name = "pynitrokey-windows-quickstart"
+version = "0"
+description = "uv + just setup for running pynitrokey (nitropy) on Windows"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+# hidapi (a pynitrokey dependency) ships Windows wheels only up to 3.12; newer Pythons
+# would need the Visual C++ Build Tools to compile it
+requires-python = ">=3.11,<3.13"
+dependencies = ["pynitrokey"]
